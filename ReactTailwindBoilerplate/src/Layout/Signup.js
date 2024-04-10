@@ -22,7 +22,7 @@ const Signup = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/users', formData); // Use Axios to make a POST request
+            const response = await axios.post('http://aeonaxy-job-server.vercel.app/users', formData); // Use Axios to make a POST request
 
             if (response.status === 200) {
                 swal('Great', 'You have created an account successfully', 'success');

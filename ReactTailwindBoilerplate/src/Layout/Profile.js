@@ -64,7 +64,7 @@ const Profile = () => {
 
         try {
 
-            const response = await axios.put(`http://localhost:5000/users/${username}`, {
+            const response = await axios.put(`http://aeonaxy-job-server.vercel.app/users/${username}`, {
                 location: location,
                 imageUrl: imageUrl
             });
