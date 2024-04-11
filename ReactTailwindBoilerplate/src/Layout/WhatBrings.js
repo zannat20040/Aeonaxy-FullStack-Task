@@ -28,7 +28,7 @@ const WhatBrings = () => {
         if (username && email) {
             try {
           
-                const  emailResponse = await axios.put(`http://aeonaxy-job-server.vercel.app/users/${username}`, {
+                const  emailResponse = await axios.put(`https://aeonaxy-job-server.vercel.app/users/${username}`, {
                     status: selectedOption
                 })
 

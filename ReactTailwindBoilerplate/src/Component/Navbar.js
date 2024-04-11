@@ -19,7 +19,7 @@ const Navbar = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://aeonaxy-job-server.vercel.app/users/${username}`);
+                const response = await axios.get(`https://aeonaxy-job-server.vercel.app/users/${username}`);
                 setUserData(response.data);
             } catch (error) {
                 console.error('Error fetching user data:', error);
